@@ -7,7 +7,14 @@
 		"php": "^8.0"
 	},
 	"require-dev": {
-		"phpstan/phpstan": "1.2.0"
+		"phpstan/phpstan": "1.2.0",
+		"nethergamesmc/pocketmine-mp": "dev-stable"
+	},
+	"repositories": [
+		{ "type": "vcs", "url": "git@github.com:NetherGamesMC/PocketMine-MP.git" }
+	],
+	"autoload": {
+		"classmap": ["src"]
 	},
 	"minimum-stability": "dev"
 }
