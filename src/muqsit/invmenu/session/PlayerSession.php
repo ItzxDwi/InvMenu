@@ -14,8 +14,8 @@ final class PlayerSession{
 	private ?InvMenuInfo $current = null;
 
 	public function __construct(
-		readonly public Player $player,
-		readonly public PlayerNetwork $network
+		public Player $player,
+		public PlayerNetwork $network
 	){}
 
 	/**
