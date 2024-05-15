@@ -17,9 +17,9 @@ use pocketmine\player\Player;
 final class BlockFixedInvMenuType implements FixedInvMenuType{
 
 	public function __construct(
-		readonly private Block $block,
-		readonly private int $size,
-		readonly private ?InvMenuGraphicNetworkTranslator $network_translator = null
+		private Block $block,
+		private int $size,
+		private ?InvMenuGraphicNetworkTranslator $network_translator = null
 	){}
 
 	public function getSize() : int{
