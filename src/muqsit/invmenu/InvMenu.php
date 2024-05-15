@@ -46,7 +46,7 @@ class InvMenu implements InvMenuTypeIds{
 		};
 	}
 
-	readonly public InvMenuType $type;
+	public InvMenuType $type;
 	protected ?string $name = null;
 	protected ?Closure $listener = null;
 	protected ?Closure $inventory_close_listener = null;
