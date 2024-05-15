@@ -22,11 +22,11 @@ use function count;
 final class BlockActorFixedInvMenuType implements FixedInvMenuType{
 
 	public function __construct(
-		readonly private Block $block,
-		readonly private int $size,
-		readonly private string $tile_id,
-		readonly private ?InvMenuGraphicNetworkTranslator $network_translator = null,
-		readonly private int $animation_duration = 0
+		private Block $block,
+		private int $size,
+		private string $tile_id,
+		private ?InvMenuGraphicNetworkTranslator $network_translator = null,
+		private int $animation_duration = 0
 	){}
 
 	public function getSize() : int{
