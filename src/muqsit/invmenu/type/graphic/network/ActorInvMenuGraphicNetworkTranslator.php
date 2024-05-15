@@ -12,7 +12,7 @@ use pocketmine\network\mcpe\protocol\types\BlockPosition;
 final class ActorInvMenuGraphicNetworkTranslator implements InvMenuGraphicNetworkTranslator{
 
 	public function __construct(
-		readonly private int $actor_runtime_id
+		private int $actor_runtime_id
 	){}
 
 	public function translate(PlayerSession $session, InvMenuInfo $current, ContainerOpenPacket $packet) : void{
