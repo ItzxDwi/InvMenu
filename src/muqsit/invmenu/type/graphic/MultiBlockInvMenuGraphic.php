@@ -16,7 +16,7 @@ final class MultiBlockInvMenuGraphic implements PositionedInvMenuGraphic{
 	 * @param PositionedInvMenuGraphic[] $graphics
 	 */
 	public function __construct(
-		readonly private array $graphics
+		private array $graphics
 	){}
 
 	private function first() : PositionedInvMenuGraphic{
