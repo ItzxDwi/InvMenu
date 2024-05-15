@@ -9,9 +9,9 @@ use pocketmine\inventory\Inventory;
 
 final class SharedInvMenuSynchronizer{
 
-	readonly private Inventory $inventory;
-	readonly private SharedInventorySynchronizer $synchronizer;
-	readonly private SharedInventoryNotifier $notifier;
+	private Inventory $inventory;
+	private SharedInventorySynchronizer $synchronizer;
+	private SharedInventoryNotifier $notifier;
 
 	public function __construct(InvMenu $menu, Inventory $inventory){
 		$this->inventory = $inventory;
